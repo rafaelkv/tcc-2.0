@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techpet</title>
+    <style>
+.header {
+  
+  background-color: #368875;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  top:0;
+  left:0;  
+  width: 100%;
+  z-index:1;
+  float:left; 
+}
+.header ul {
+  
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #368875;
+}
+.header li a {
+  display: block;
+  padding: 0.7em 0.5em;
+  text-decoration: none;
+  transition:.3s;
+  border-bottom: 1px #368875 solid;
+  color:#242424;  
+}
+.header li a:hover,
+.header .btn-mobile:hover {
+  background-color: #02a1ee;
+  color:#368875; 
+}
+.header .logo {
+  margin-bottom: 15px;
+  display: none;
+  float: right;
+}
+.header .nav {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+/* menu icon */
+.header .mobile-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+.header .mobile-icon .hamburguer {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+.header .mobile-icon .hamburguer:before,
+.header .mobile-icon .hamburguer:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.header .mobile-icon .hamburguer:before {
+  top: 5px;
+}
+.header .mobile-icon .hamburguer:after {
+  top: -5px;
+}
+/* menu btn */
+.header .mobile-btn {
+  display: none;
+}
+.header .mobile-btn:checked ~ .nav {
+  max-height: 240px;
+}
+.header .mobile-btn:checked ~ .mobile-icon .hamburguer {
+  background: transparent;
+}
+.header .mobile-btn:checked ~ .mobile-icon .hamburguer:before {
+  transform: rotate(-45deg);
+}
+.header .mobile-btn:checked ~ .mobile-icon .hamburguer:after {
+  transform: rotate(45deg);
+}
+.header .mobile-btn:checked ~ .mobile-icon:not(.steps) .hamburguer:before,
+.header .mobile-btn:checked ~ .mobile-icon:not(.steps) .hamburguer:after {
+  top: 0;
+}
+.container {
+  width:100%;
+  float:left;
+  margin-top:100px;    
+}
+.content { 
+  float:left; 
+  width:92%; 
+  margin:0 4%;  
+ 
+}
+.fundocarrossel{
+ margin-top: 90px;
+ height: 620px;
+ width: 101%;
+ margin-left: -11px;
+ background-color: #acd7cd;
+}
+.fotofundocarrosel{
+background-image: url('https://media.discordapp.net/attachments/1129429057164017756/1171781717145686066/fotocerta2.png?ex=655dedc4&is=654b78c4&hm=a541d66d38f3ee3c0501e0016c5e7a8eeb2960ab409537068485cdbc66e62322&=&width=938&height=625');
+background-repeat: no-repeat;
+background-position-y: 110px;
+background-position-x: 48%;
+width: 100%;
+height: 450px;
+}
+/* 48em = 768px */
+@media (min-width: 48em) {
+  
+  .header li { float:left; }
+  
+  .header li a {
+    
+    padding: 15px 30px;
+    margin-top: 10px;
+    border-radius: 6px;
+  
+  }
+  .header .nav {
+    clear: none;
+    text-align: left;
+    max-height: none;
+  }
+  
+  .header .mobile-icon { display:none; }
+  .header li a {
+  
+    transition:.3s;
+    border-bottom:0; 
+  
+  }
+
+  .header .logo {
+ display:  flex;
+ margin-top: -45px;
+ float: right;
+}
+}
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="content">
+          
+          <input class="mobile-btn" type="checkbox" id="mobile-btn" />
+          <label class="mobile-icon" for="mobile-btn"><span class="hamburguer"></span></label>
+
+          <ul class="nav">
+            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="#" title="Sobre">Sobre</a></li>
+            <li><a href="#" title="Artigos">Artigos</a></li>
+            <li><a href="#" title="Contato">Contato</a></li>
+          
+          </ul>
+          
+          <a href="#" target="_blank" class="logo"><img width="50px" height="50px" src="https://media.discordapp.net/attachments/1129429057164017756/1171775894172471436/RCvNWE0mAAAAAElFTkSuQmCC.png?ex=655de857&is=654b7357&hm=44573e617853d061faaa49be0d61def1318b6d3da485cbb809a66ddced109a18&=" title="Loop Nerd"></a>
+        </div><!--content-->
+      </header>
+
+
+      <div class="fundocarrossel">
+        <div class="fotofundocarrosel">
+
+        </div>
+      </div>
+</body>
+</html>

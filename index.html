@@ -6,161 +6,6 @@
     <link rel="stylesheet" type="text/css" href="index.css" media="screen"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Techpet</title>
-    <style>
-.header {
-  
-  background-color: #368875;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  position: fixed;
-  top:0;
-  left:0;  
-  width: 100%;
-  z-index:1;
-  float:left; 
-}
-.header ul {
-  
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #368875;
-}
-.header li a {
-  display: block;
-  padding: 0.7em 0.5em;
-  text-decoration: none;
-  transition:.3s;
-  border-bottom: 1px #368875 solid;
-  color:#242424;  
-}
-.header li a:hover,
-.header .btn-mobile:hover {
-  background-color: #02a1ee;
-  color:#368875; 
-}
-.header .logo {
-  margin-bottom: 15px;
-  display: none;
-  float: right;
-}
-.header .nav {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
-}
-/* menu icon */
-.header .mobile-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
-.header .mobile-icon .hamburguer {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-.header .mobile-icon .hamburguer:before,
-.header .mobile-icon .hamburguer:after {
-  background: #333;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-.header .mobile-icon .hamburguer:before {
-  top: 5px;
-}
-.header .mobile-icon .hamburguer:after {
-  top: -5px;
-}
-/* menu btn */
-.header .mobile-btn {
-  display: none;
-}
-.header .mobile-btn:checked ~ .nav {
-  max-height: 240px;
-}
-.header .mobile-btn:checked ~ .mobile-icon .hamburguer {
-  background: transparent;
-}
-.header .mobile-btn:checked ~ .mobile-icon .hamburguer:before {
-  transform: rotate(-45deg);
-}
-.header .mobile-btn:checked ~ .mobile-icon .hamburguer:after {
-  transform: rotate(45deg);
-}
-.header .mobile-btn:checked ~ .mobile-icon:not(.steps) .hamburguer:before,
-.header .mobile-btn:checked ~ .mobile-icon:not(.steps) .hamburguer:after {
-  top: 0;
-}
-.container {
-  width:100%;
-  float:left;
-  margin-top:100px;    
-}
-.content { 
-  float:left; 
-  width:92%; 
-  margin:0 4%;  
- 
-}
-.fundocarrossel{
- margin-top: 90px;
- height: 620px;
- width: 101%;
- margin-left: -11px;
- background-color: #acd7cd;
-}
-.fotofundocarrosel{
-background-image: url('https://media.discordapp.net/attachments/1129429057164017756/1171781717145686066/fotocerta2.png?ex=655dedc4&is=654b78c4&hm=a541d66d38f3ee3c0501e0016c5e7a8eeb2960ab409537068485cdbc66e62322&=&width=938&height=625');
-background-repeat: no-repeat;
-background-position-y: 110px;
-background-position-x: 48%;
-width: 100%;
-height: 450px;
-}
-/* 48em = 768px */
-@media (min-width: 48em) {
-  
-  .header li { float:left; }
-  
-  .header li a {
-    
-    padding: 15px 30px;
-    margin-top: 10px;
-    border-radius: 6px;
-  
-  }
-  .header .nav {
-    clear: none;
-    text-align: left;
-    max-height: none;
-  }
-  
-  .header .mobile-icon { display:none; }
-  .header li a {
-  
-    transition:.3s;
-    border-bottom:0; 
-  
-  }
-
-  .header .logo {
- display:  flex;
- margin-top: -45px;
- float: right;
-}
-}
-    </style>
 </head>
 
 <body>
@@ -189,5 +34,78 @@ height: 450px;
 
         </div>
       </div>
+      
+      <a href="" class="btncomprar">Comprar</a>
+
+      <div class="Trescaixa">
+
+        <div class="titulocaixas">
+          <h2 class="titulo1">Diferenciais Do <p></p>Comedouro</h2>
+          <h2 class="titulo2">Diferenciais Do <p></p>Aplicativo</h2>
+          <h2 class="titulo3">Avaliações</h2>
+        </div>
+
+     <div class="container">
+     <div class="box"id="box-meio">
+      <img src="https://cdn-icons-png.flaticon.com/512/2983/2983803.png" alt="Imagem 1">
+      <p></p>
+     <div class="textocaixa1" id="text">
+      Horários personalizados<p></p>
+      Alimentação Programável<p></p>
+      Versatilidade de Tamanho<p></p>
+      Notificações em tempo real<p></p>
+      Durabilidade e Estilo sofisticado<p></p>
+      Facilidade de limpeza</div>
+  </div>
+
+  <div class="box" id="box-right">
+    <img src="https://cdn-icons-png.flaticon.com/512/2983/2983803.png" alt="Imagem 2">
+    <div  class="textocaixa2" id="text">
+      Programação Personalizada <p></p>
+      Controle Remoto inteligente<p></p>
+      Notificações em Tempo real<p></p>
+      Histórico de Alimentação<p></p>
+      Conexão Segura<p></p>
+      Facilidade de Uso</div>
+  </div>
+
+  <div class="box" id="box-left">
+    <img src="https://cdn-icons-png.flaticon.com/512/2983/2983803.png" alt="Imagem 3">
+    <p id="text">Avaliação</p>
+  </div>
+      </div>
+
+
+      <div class="faixasobre"><p class="titulosobre">Sobre o Techpet</p></div>
+      <div class="sobre">O Comedouro Automático para Pets é um <p></p>
+        dispositivo projetado para⠀simplificar⠀a <p></p>
+        vida⠀dos donos⠀de animais de estimação <p></p>
+        ⠀⠀⠀com sua avançada tecnologia, <p></p>
+        ⠀⠀proporcionando um novo nível de <p></p>
+        ⠀⠀conveniência,⠀precisão e cuidado <p></p>
+        ⠀⠀⠀personalizado para os seus pets.</div>
+
+         <div class="fotocmdr"><img width="509" height="579"  class="fotocmdr" src="https://www.petmobill.com.br/wp-content/uploads/2021/07/comedouro-elevado-petmobill-03.jpg" alt="comedouro"></div>
+
+         <div class="textoladosobre">———————</div>
+
+
+         <div class="sobreapp">O aplicativo de controle que acompanha <p></p>
+          ⠀o Comedouro Automático é muito mais <p></p>
+          ⠀ do que uma simples ferramenta. Ele é a <p></p>
+          ⠀sua conexão direta com o bem-estar e a <p></p>
+          ⠀⠀ comodidade do seu animal de <p></p>
+          ⠀⠀estimação. Com este aplicativo <p></p>
+          ⠀⠀intuitivo, você tem o poder de <p></p> 
+          ⠀personalizar a alimentação do seu pet <p></p>
+          ⠀ ⠀de maneira conveniente e eficiente.</div>
+          <div class="fotocachorro"><img class="fotocachorro" src="https://media.discordapp.net/attachments/1129429057164017756/1175493347197071380/image.png?ex=656b6e7d&is=6558f97d&hm=b69a7537085b38053a171fe82aaeb2b9cfa6d39800ac2416644f6ca792749064&=&width=490&height=559" alt="cachorro em circulo verde"></div>
+
+          <div class="titulosobreapp"><p>Sobre o aplicativo⠀<span class="corapp">————</span></p></div>
+          
+          
+          
+          <div class="espacovazio">a</div>
+
 </body>
 </html>

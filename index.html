@@ -8,6 +8,8 @@
     <title>Techpet</title>
 </head>
 
+<style></style>
+
 <body>
 
     <header class="header">
@@ -18,22 +20,77 @@
 
           <ul class="nav">
             <li><a href="#" title="Home">Home</a></li>
-            <li><a href="#" title="Sobre">Sobre</a></li>
-            <li><a href="#" title="Artigos">Artigos</a></li>
-            <li><a href="#" title="Contato">Contato</a></li>
-          
+            <li class="dropdown">
+                <a href="#" title="Ajuda">Ajuda</a>
+                <ul class="submenu">
+                    <li><a href="#" title="Opção 1">Sobre nós</a></li>
+                    <li><a href="#" title="Opção 2">Como comprar</a></li>
+                    <li><a href="#" title="Opção 3">Duvidas frequentes</a></li>
+                    <li><a href="#" title="Opção 4">Politica de privacidade</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" title="Contato">Contato</a>
+                <ul class="submenu">
+                    <li><a href="#" title="Opção 5">Email</a></li>
+                    <li><a href="#" title="Opção 6">Atendimento</a></li>
+                    <li><a href="#" title="Opção 7">Duvidas frequentes</a></li>
+                </ul>
+            </li>
+        </ul>
+        <li class="dropdownlogo">
+          <a href="#" class="logo"><img width="50px" height="50px" src="https://media.discordapp.net/attachments/1129429057164017756/1171775894172471436/RCvNWE0mAAAAAElFTkSuQmCC.png?ex=655de857&is=654b7357&hm=44573e617853d061faaa49be0d61def1318b6d3da485cbb809a66ddced109a18&=" title="Loop Nerd"></a>
+          <ul class="submenu">
+              <li><a href="#" title="Opção 5">Minha Conta</a></li>
+              <li><a href="#" title="Opção 6">Atendimento</a></li>
+              <li><a href="#" title="Opção 7">Duvidas frequentes</a></li>
           </ul>
-          
-          <a href="#" target="_blank" class="logo"><img width="50px" height="50px" src="https://media.discordapp.net/attachments/1129429057164017756/1171775894172471436/RCvNWE0mAAAAAElFTkSuQmCC.png?ex=655de857&is=654b7357&hm=44573e617853d061faaa49be0d61def1318b6d3da485cbb809a66ddced109a18&=" title="Loop Nerd"></a>
+      </li>
         </div><!--content-->
       </header>
 
-
-      <div class="fundocarrossel">
-        <div class="fotofundocarrosel">
-
+    <div class="fundocarrossel">
+      <div class="carousel-container">
+        <div class="slide slide1 active">
+            <div class="info-box">
+                <!-- Conteúdo do primeiro slide -->
+                <div class="txtslide1">Alimentando Seus Animais de Estimação <p class="prcarrossel"></p><a class="caractereinvisivel">⠀⠀⠀⠀⠀⠀⠀⠀⠀</a>com Tecnologia</div>
+                <img class="fotodireita" src="https://media.discordapp.net/attachments/1129429057164017756/1177032028819046440/image.png?ex=6571077f&is=655e927f&hm=26a442c1b7d27e4f3541cb36e7915009a3c5964b6b25b0a1a2d29c1bbc6d07ce&=&format=webp" alt="comedouro exemplo">
+            </div>
         </div>
-      </div>
+
+        <!-- Adicione mais slides conforme necessário -->
+        <div class="slide slide2">
+            <div class="info-box">
+                <!-- Conteúdo do segundo slide -->
+                <div class="txtslide2">O Comedouro Automático Arduino é uma solução <p class="prcarrossel"></p><a class="caractereinvisivel">⠀</a>inovadora que combina a paixão pela tecnologia<p class="prcarrossel"></p><a class="caractereinvisivel">⠀⠀</a>com o cuidado e bem-estar dos seus Pets</div>
+                <img class="fotoesquerda" src="https://www.petmobill.com.br/wp-content/uploads/2021/07/comedouro-elevado-petmobill-03.jpg" alt="comedouro exemplo">
+            </div>
+        </div>
+
+        <div class="slide slide3">
+            <div class="info-box">
+                <!-- Conteúdo do terceiro slide -->
+                <div class="txtslide3">Oferecendo uma série de recursos avançados, <p class="prcarrossel"></p>combinada com a sofisticação da automação.</div>
+                <img class="fotoesquerda2" src="https://www.petmobill.com.br/wp-content/uploads/2021/07/comedouro-elevado-petmobill-04.jpg" alt="comedouro exemplo">
+            </div>
+        </div>
+
+        <div class="slide slide4">
+            <div class="info-box">
+                <!-- Conteúdo do quarto slide -->
+                <div class="txtslide4">Proporcione uma alimentação precisa,<p class="prcarrossel"></p> conveniente e personalizada para seus <p class="prcarrossel"></p> amigos peludos com este dispositivo de <p class="prcarrossel"></p><a class="caractereinvisivel">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</a>ponta.</div>
+                <img class="fotodireita2" src="https://media.discordapp.net/attachments/1129429057164017756/1177036325057208330/a8473cf2-ab5d-4477-b1d2-9c2df8a6c589.png?ex=65710b80&is=655e9680&hm=56a478d93b714d9ae020ad4430feb1600a092249d6df10a72b77fd710c0751f7&=&format=webp&width=457&height=559" alt="">
+            </div>
+        </div>
+    </div>  
+    <div class="controls">
+      <button class="control-button active" onclick="showSlide(1)"></button>
+      <button class="control-button" onclick="showSlide(2)"></button>
+      <button class="control-button" onclick="showSlide(3)"></button>
+      <button class="control-button" onclick="showSlide(4)"></button>
+  </div>
+  </div>
       
       <a href="" class="btncomprar">Comprar</a>
 
@@ -107,5 +164,24 @@
           
           <div class="espacovazio">a</div>
 
+
+          <script src="script.js"></script>
+         
+         
+         <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+            var hasSubmenus = document.querySelectorAll('.has-submenu');
+
+            hasSubmenus.forEach(function(menuItem) {
+                menuItem.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var submenu = this.querySelector('.submenu');
+                    submenu.style.display = (submenu.style.display === 'block' || submenu.style.display === '') ? 'none' : 'block';
+                });
+            });
+        });
+            
+          </script>
 </body>
 </html>
